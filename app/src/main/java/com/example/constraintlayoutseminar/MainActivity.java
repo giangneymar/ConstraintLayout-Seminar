@@ -2,11 +2,8 @@ package com.example.constraintlayoutseminar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.example.constraintlayoutseminar.databinding.ActivityMainBinding;
 
@@ -20,13 +17,19 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         onClickG();
+        onClickDat();
     }
 
-    /**
+    /*
      * code cua Dat
-     * /
-     * <p>
-     * /*
+     */
+    private void onClickDat() {
+        binding.ImageFilterButton.setOnClickListener(view -> {
+            startActivity(new Intent(this, ImageFilterButtonActivity.class));
+        });
+    }
+
+     /*
      * code cua Giang
      */
     private void onClickG() {
