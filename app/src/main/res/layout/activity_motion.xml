@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MotionActivity"
-    app:layoutDescription="@xml/activity_motion_scene">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motion_scene_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/activity_motion_scene"
+        tools:context=".MotionActivity">
+
+        <ImageView
+            android:id="@+id/actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"/>
+
+        <Button
+            android:id="@+id/buttonPress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press Me"
+            app:layout_constraintBottom_toTopOf="@id/buttonReset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>
