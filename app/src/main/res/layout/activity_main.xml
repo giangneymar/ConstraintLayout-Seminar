@@ -14,11 +14,17 @@
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/motion_scene"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Motion Scene" />
+
+            <Button
+                android:id="@+id/view_transition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ViewTransition" />
 
         </LinearLayout>
 

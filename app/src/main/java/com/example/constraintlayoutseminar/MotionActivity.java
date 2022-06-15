@@ -1,9 +1,8 @@
 package com.example.constraintlayoutseminar;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.constraintlayoutseminar.databinding.ActivityMotionBinding;
 
@@ -19,10 +18,8 @@ public class MotionActivity extends AppCompatActivity {
         onClick();
     }
 
-
     private void onClick() {
         binding.buttonPress.setOnClickListener(view -> binding.motionSceneContainer.transitionToEnd());
-
         binding.buttonReset.setOnClickListener(view -> binding.motionSceneContainer.transitionToStart());
     }
 

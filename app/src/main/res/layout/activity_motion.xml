@@ -10,17 +10,11 @@
         app:layoutDescription="@xml/activity_motion_scene"
         tools:context=".MotionActivity">
 
-        <ImageView
-            android:id="@+id/actor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test" />
-
         <Button
             android:id="@+id/button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="100dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transition" />
 
         <Button
             android:id="@+id/buttonPress"
