@@ -6,22 +6,17 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFB6C1"
         tools:context=".ImageFilterButtonActivity">
 
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_margin="10dp"
             android:id="@+id/imageFilterButton"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:scaleType="fitXY"
-            app:warmth="2.7"
             app:altSrc="@drawable/img_new_york"
-            app:brightness="0.9"
             app:overlay="false"
-            app:round="40dp"
-            app:crossfade="4"
-            app:roundPercent="1"
-            app:contrast="1.6"
-            app:saturation="1.5"
             android:src="@drawable/img_trung_khanh"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,26 +24,29 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/crossFade"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/contrast"
             app:layout_constraintTop_toBottomOf="@id/imageFilterButton"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:text="crossfade" />
 
             <TextView
                 android:id="@+id/crossFadeMinus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:textSize="30dp"
                 android:text="-" />
 
@@ -57,10 +55,227 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:text="+" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/contrast"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/zoom"
+            app:layout_constraintTop_toBottomOf="@id/crossFade"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="contrast" />
+
+            <TextView
+                android:id="@+id/conTrastMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/conTrastPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zoom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/roundPercent"
+            app:layout_constraintTop_toBottomOf="@id/contrast"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="zoom" />
+
+            <TextView
+                android:id="@+id/zoomMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/zoomPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/roundPercent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/saturation"
+            app:layout_constraintTop_toBottomOf="@id/zoom"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="roundPercent" />
+
+            <TextView
+                android:id="@+id/roundPercentMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/roundPercentPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/saturation"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/rotate"
+            app:layout_constraintTop_toBottomOf="@id/roundPercent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="saturation" />
+
+            <TextView
+                android:id="@+id/saturationMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/saturationPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="+" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rotate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/brightness"
+            app:layout_constraintTop_toBottomOf="@id/saturation"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="rotate" />
+
+            <TextView
+                android:id="@+id/rotateMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/rotatePlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brightness"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rotate">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="brightness"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/brightnessMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="-"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/brightnessPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="+"
+                android:textSize="25dp" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

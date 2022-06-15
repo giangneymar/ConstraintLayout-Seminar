@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         binding.ImageFilterButton.setOnClickListener(view -> {
             startActivity(new Intent(this, ImageFilterButtonActivity.class));
         });
+
+        binding.mockView.setOnClickListener(view -> {
+            startActivity(new Intent(this, MockViewActivity.class));
+        });
     }
 
      /*

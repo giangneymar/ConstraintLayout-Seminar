@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.utils.widget.MockView
+            android:id="@+id/mock"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:background="#685E38"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.utils.widget.MockView
+            android:id="@+id/mockk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#E3E36D"
+            app:layout_constraintLeft_toRightOf="@id/mock"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.utils.widget.MockView
+            android:id="@+id/mockkk"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#E3D9D6"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@id/mock"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mockk" />
+
+        <androidx.constraintlayout.utils.widget.MockView
+            android:id="@+id/mockkkk"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#69F0AE"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@id/mock"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mockkk" />
+
+        <androidx.constraintlayout.utils.widget.MotionLabel
+            android:id="@+id/label1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="312dp"
+            android:background="@drawable/img_nui"
+            android:padding="10dp"
+            app:borderRound="20dp"
+            app:textOutlineColor="#FFAB40"
+            android:text="Motion Label"
+            app:textureEffect="frost"
+            app:textOutlineThickness="2dp"
+            app:textBackgroundPanX="7"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:textPanY="1"
+            app:textPanX="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textBackground="@drawable/img_trung_khanh"
+            app:textureHeight="10dp"
+            app:textureWidth="10dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

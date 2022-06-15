@@ -17,6 +17,9 @@
             android:name=".ViewTransitionActivity"
             android:exported="false" />
         <activity
+            android:name=".MockViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".MotionActivity"
             android:exported="false" />
         <activity
