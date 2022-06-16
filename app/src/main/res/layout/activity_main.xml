@@ -51,7 +51,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:text="MockView"/>
+                android:text="MotionLabel"/>
+
+            <Button
+                android:id="@+id/Carouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Carouse"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.mockView.setOnClickListener(view -> {
-            startActivity(new Intent(this, MockViewActivity.class));
+            startActivity(new Intent(this, MotionLabelActivity.class));
+        });
+
+        binding.Carouse.setOnClickListener(view -> {
+            startActivity(new Intent(this, CarouselActivity.class));
         });
     }
 

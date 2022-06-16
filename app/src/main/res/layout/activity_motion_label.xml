@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.utils.widget.MotionLabel
+            android:id="@+id/label1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_nui"
+            android:padding="10dp"
+            android:text="Motion Label"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:borderRound="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:textBackground="@drawable/img_trung_khanh"
+            app:textBackgroundPanX="7"
+            app:textOutlineColor="#FFAB40"
+            app:textOutlineThickness="2dp"
+            app:textPanX="1"
+            app:textPanY="0.5"
+            app:textureEffect="frost"
+            app:textureHeight="10dp"
+            app:textureWidth="10dp"
+            tools:layout_editor_absoluteY="199dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

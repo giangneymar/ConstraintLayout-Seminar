@@ -17,10 +17,13 @@
             android:name=".MotionEffectActivity"
             android:exported="false" />
         <activity
+            android:name=".CarouselActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewTransitionActivity"
             android:exported="false" />
         <activity
-            android:name=".MockViewActivity"
+            android:name=".MotionLabelActivity"
             android:exported="false" />
         <activity
             android:name=".MotionActivity"
