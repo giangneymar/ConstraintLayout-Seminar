@@ -27,12 +27,6 @@
                 android:text="ViewTransition" />
 
             <Button
-                android:id="@+id/constraint_basic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Basic" />
-
-            <Button
                 android:id="@+id/motion_effect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

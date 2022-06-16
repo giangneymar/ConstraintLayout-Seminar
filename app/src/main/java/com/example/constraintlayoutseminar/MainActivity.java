@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         binding.viewTransition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ViewTransitionActivity.class)));
-        binding.constraintBasic.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, BasicActivity.class)));
         binding.motionEffect.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionEffectActivity.class)));
     }
 }
