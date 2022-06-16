@@ -109,7 +109,6 @@
         app:motionEffect_alpha="0"
         app:motionEffect_end="60"
         app:motionEffect_move="west"
-        app:motionEffect_start="40"
-        app:motionEffect_strict="false" />
+        app:motionEffect_start="40"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
