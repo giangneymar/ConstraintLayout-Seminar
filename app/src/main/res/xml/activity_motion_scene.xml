@@ -259,6 +259,7 @@
         </KeyFrameSet>
     </ViewTransition>
 
+    <!-- big big pop ver -->
     <ViewTransition
         android:id="@+id/bigPop2"
         app:duration="3000"

@@ -1,9 +1,9 @@
 package com.example.constraintlayoutseminar;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.constraintlayoutseminar.databinding.ActivityMainBinding;
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-     /*
+    /*
      * code cua Giang
      */
     private void onClickG() {
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, MotionActivity.class);
             startActivity(intent);
         });
-        binding.viewTransition.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, ViewTransitionActivity.class));
-        });
+        binding.viewTransition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ViewTransitionActivity.class)));
+        binding.constraintBasic.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, BasicActivity.class)));
+        binding.motionEffect.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionEffectActivity.class)));
     }
 }
