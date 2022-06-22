@@ -26,10 +26,8 @@ public class CarouselActivity extends AppCompatActivity {
                 R.drawable.img_nui,
                 R.drawable.img_new_york,
                 R.drawable.img_trung_khanh,
-                R.drawable.img_new_york,
-                R.drawable.img_trung_khanh,
-                R.drawable.img_nui,
-                R.drawable.img_trung_khanh
+                R.drawable.img_thai_lan,
+                R.drawable.img_halan
         };
 
         binding.carousel.setAdapter(new Carousel.Adapter() {

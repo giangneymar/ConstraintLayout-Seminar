@@ -39,7 +39,7 @@
         <OnSwipe app:dragDirection="dragRight" />
         <KeyFrameSet>
             <KeyPosition
-                app:framePosition="50"
+                app:framePosition="90"
                 app:keyPositionType="pathRelative"
                 app:motionTarget="@+id/button"
                 app:percentY="0.5" />
