@@ -5,31 +5,31 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/img_new_york">
 
         <androidx.constraintlayout.utils.widget.MotionLabel
-            android:id="@+id/label1"
+            android:id="@+id/label2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/img_nui"
+            android:background="@color/black"
             android:padding="10dp"
             android:text="Motion Label"
-            android:textSize="60sp"
+            android:textSize="65sp"
             android:textStyle="bold"
-            app:borderRound="20dp"
+            app:textOutlineColor="@color/white"
+            app:textOutlineThickness="0.5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:textBackground="@drawable/img_trung_khanh"
-            app:textBackgroundPanX="7"
-            app:textOutlineColor="#FFAB40"
-            app:textOutlineThickness="2dp"
-            app:textPanX="1"
-            app:textPanY="0.5"
+            app:layout_constraintVertical_bias="0.203"
+            app:textBackground="@drawable/img_nui"
             app:textureEffect="frost"
-            app:textureHeight="10dp"
-            app:textureWidth="10dp"
-            tools:layout_editor_absoluteY="199dp" />
+            app:textPanX="0.5"
+            app:textPanY="0"
+            app:textureHeight="1dp"
+            app:textureWidth="1dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
