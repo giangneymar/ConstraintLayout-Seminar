@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start" />
+
+    <ConstraintSet android:id="@+id/end" />
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start" />
+
+
+    <!-- No State -->
+    <ViewTransition
+        android:id="@+id/pop"
+        app:duration="300"
+        app:motionTarget="@+id/button2"
+        app:onStateTransition="actionDownUp"
+        app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:scaleX="3"
+                android:scaleY="3"
+                app:framePosition="100" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- Tall -->
+    <ViewTransition
+        app:duration="300"
+        app:ifTagNotSet="@id/myTag1"
+        app:motionTarget="@+id/button3"
+        app:onStateTransition="actionDown"
+        app:setsTag="@+id/myTag1"
+        app:viewTransitionMode="currentState">
+        <ConstraintOverride android:layout_height="100dp" />
+    </ViewTransition>
+    <ViewTransition
+        android:id="@+id/currentShort"
+        app:clearsTag="@+id/myTag1"
+        app:duration="300"
+        app:ifTagSet="@id/myTag1"
+        app:motionTarget="@+id/button3"
+        app:onStateTransition="actionDown"
+        app:viewTransitionMode="currentState">
+        <ConstraintOverride android:layout_height="wrap_content" />
+    </ViewTransition>
+
+    <!-- Rotate -->
+    <ViewTransition
+        android:id="@+id/longDown"
+        app:duration="3000"
+        app:motionTarget="@+id/button4"
+        app:onStateTransition="actionUp"
+        app:viewTransitionMode="noState">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:rotation="360"
+                android:scaleX="0.2"
+                android:scaleY="0.2"
+                app:framePosition="50" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- Alpha -->
+    <ViewTransition
+        android:id="@+id/pulse"
+        app:duration="4000"
+        app:motionTarget="@+id/button5"
+        app:onStateTransition="actionUp"
+        app:viewTransitionMode="noState">
+
+        <KeyFrameSet>
+            <KeyCycle
+                android:alpha="0.5"
+                app:framePosition="0"
+                app:waveOffset="0.5"
+                app:wavePeriod="1"
+                app:waveShape="cos" />
+            <KeyCycle
+                android:alpha="0.5"
+                app:framePosition="50"
+                app:waveOffset="0.5"
+                app:wavePeriod="1"
+                app:waveShape="cos" />
+            <KeyCycle
+                android:alpha="0.5"
+                app:framePosition="100"
+                app:waveOffset="0.5"
+                app:wavePeriod="1"
+                app:waveShape="cos" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- Blink -->
+    <ViewTransition
+        android:id="@+id/blink"
+        app:duration="4000"
+        app:motionTarget="@+id/button6"
+        app:onStateTransition="actionUp"
+        app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyCycle
+                android:alpha="0.5"
+                app:framePosition="0"
+                app:waveOffset="0.5"
+                app:wavePeriod="1"
+                app:waveShape="square" />
+            <KeyCycle
+                android:alpha="0.5"
+                app:framePosition="50"
+                app:waveOffset="0.5"
+                app:wavePeriod="5"
+                app:waveShape="square" />
+            <KeyCycle
+                android:alpha="0.5"
+                app:framePosition="100"
+                app:waveOffset="0.5"
+                app:wavePeriod="1"
+                app:waveShape="square" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- shake hoz -->
+    <ViewTransition
+        android:id="@+id/no"
+        app:duration="4000"
+        app:motionTarget="@+id/button7"
+        app:onStateTransition="actionUp"
+        app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyCycle
+                android:rotationY="20"
+                android:translationX="20dp"
+                app:framePosition="0"
+                app:wavePeriod="1" />
+            <KeyCycle
+                android:rotationY="20"
+                android:translationX="20dp"
+                app:framePosition="50"
+                app:wavePeriod="1" />
+            <KeyCycle
+                android:rotationY="20"
+                android:translationX="20dp"
+                app:framePosition="100"
+                app:wavePeriod="1" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- shake ver -->
+    <ViewTransition
+        android:id="@+id/yes"
+        app:duration="4000"
+        app:motionTarget="@+id/button8"
+        app:onStateTransition="actionUp"
+        app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyCycle
+                android:rotationX="-20"
+                android:translationY="20dp"
+                app:framePosition="0"
+                app:wavePeriod="1" />
+            <KeyCycle
+                android:rotationX="-20"
+                android:translationY="20dp"
+                app:framePosition="50"
+                app:wavePeriod="1" />
+            <KeyCycle
+                android:rotationX="-20"
+                android:translationY="20dp"
+                app:framePosition="100"
+                app:wavePeriod="1" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- shake maybe -->
+    <ViewTransition
+        android:id="@+id/maybe"
+        app:duration="4000"
+        app:motionTarget="@+id/button9"
+        app:onStateTransition="actionUp"
+        app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyCycle
+                android:rotation="20"
+                android:translationX="10dp"
+                app:framePosition="0"
+                app:wavePeriod="1" />
+            <KeyCycle
+                android:rotation="20"
+                android:translationX="10dp"
+                app:framePosition="50"
+                app:wavePeriod="2" />
+            <KeyCycle
+                android:rotation="20"
+                android:translationX="10dp"
+                app:framePosition="100"
+                app:wavePeriod="1" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- big pop ver -->
+    <ViewTransition
+        android:id="@+id/bigPop"
+        app:duration="3000"
+        app:motionTarget="@+id/button10"
+        app:onStateTransition="actionDownUp"
+        app:upDuration="300"
+        app:viewTransitionMode="noState">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:rotation="20"
+                android:scaleX="3"
+                android:scaleY="3"
+                app:framePosition="100" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+    <!-- big big pop ver -->
+    <ViewTransition
+        android:id="@+id/bigPop2"
+        app:duration="3000"
+        app:motionTarget="@+id/button11"
+        app:onStateTransition="actionDownUp"
+        app:upDuration="300"
+        app:viewTransitionMode="noState">
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                android:scaleX="3"
+                android:scaleY="3"
+                app:framePosition="100" />
+            <KeyTimeCycle
+                android:rotation="0"
+                app:framePosition="0"
+                app:wavePeriod="4" />
+            <KeyTimeCycle
+                android:rotation="0"
+                app:framePosition="80"
+                app:wavePeriod="4" />
+            <KeyTimeCycle
+                android:rotation="20"
+                app:framePosition="100"
+                app:wavePeriod="4" />
+        </KeyFrameSet>
+    </ViewTransition>
+
+</MotionScene>

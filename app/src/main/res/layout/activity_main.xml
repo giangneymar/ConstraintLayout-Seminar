@@ -15,21 +15,41 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <Button
-                android:id="@+id/motion_scene"
+                android:id="@+id/basic_motion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Motion Scene" />
+                android:text="Basic Motion" />
+
+            <Button
+                android:id="@+id/custom_attributes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Attributes" />
+
+            <Button
+                android:id="@+id/keyframe_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keyframe Position" />
+
+            <Button
+                android:id="@+id/keyframe_interpolation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keyframe Interpolation" />
 
             <Button
                 android:id="@+id/view_transition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="ViewTransition" />
 
             <Button
                 android:id="@+id/motion_effect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
                 android:text="Motion Effect" />
 
         </LinearLayout>
@@ -43,22 +63,22 @@
             <Button
                 android:id="@+id/ImageFilterButton"
                 android:layout_width="wrap_content"
-                android:text="ImageFilterButton"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="ImageFilterButton" />
 
             <Button
                 android:id="@+id/mockView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:text="MotionLabel"/>
+                android:text="MotionLabel" />
 
             <Button
                 android:id="@+id/Carouse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:text="Carouse"/>
+                android:text="Carouse" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

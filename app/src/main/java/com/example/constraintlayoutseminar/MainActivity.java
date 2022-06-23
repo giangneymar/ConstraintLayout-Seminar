@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
      * code cua Giang
      */
     private void onClickG() {
-        binding.motionScene.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, MotionActivity.class);
-            startActivity(intent);
-        });
+        binding.basicMotion.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionActivity.class)));
+        binding.customAttributes.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, CustomAttributesActivity.class)));
+        binding.keyframePosition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, KeyFramePositionActivity.class)));
+        binding.keyframeInterpolation.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, KeyFrameInterpolationActivity.class)));
         binding.viewTransition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ViewTransitionActivity.class)));
         binding.motionEffect.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionEffectActivity.class)));
     }

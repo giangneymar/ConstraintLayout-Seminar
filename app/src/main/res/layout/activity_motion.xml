@@ -10,30 +10,38 @@
         app:layoutDescription="@xml/activity_motion_scene"
         tools:context=".MotionActivity">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Transition"
-            tools:layout_editor_absoluteX="10dp" />
 
-        <Button
-            android:id="@+id/buttonPress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Press Me"
-            app:layout_constraintBottom_toTopOf="@id/buttonReset"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/buttonReset"
+        <TextView
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_margin="10dp"
+            android:text="Khong biet viet gi"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:text="@string/text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </layout>

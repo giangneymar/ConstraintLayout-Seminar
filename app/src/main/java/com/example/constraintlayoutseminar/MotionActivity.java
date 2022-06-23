@@ -1,6 +1,8 @@
 package com.example.constraintlayoutseminar;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,12 +17,5 @@ public class MotionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMotionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        onClick();
     }
-
-    private void onClick() {
-        binding.buttonPress.setOnClickListener(view -> binding.motionSceneContainer.transitionToEnd());
-        binding.buttonReset.setOnClickListener(view -> binding.motionSceneContainer.transitionToStart());
-    }
-
 }
