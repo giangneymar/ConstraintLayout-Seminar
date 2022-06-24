@@ -6,6 +6,7 @@ import androidx.constraintlayout.utils.widget.ImageFilterView;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.constraintlayoutseminar.databinding.ActivityCarouselBinding;
@@ -38,14 +39,14 @@ public class CarouselActivity extends AppCompatActivity {
 
             @Override
             public void populate(View view, int index) {
-                if (view instanceof ImageFilterView){
+                if (view instanceof ImageFilterView) {
                     ((ImageFilterView) view).setImageResource(images[index]);
                 }
             }
 
             @Override
             public void onNewItem(int index) {
-
+                Log.d("Aaaaaaaa", index + "");
             }
         });
     }

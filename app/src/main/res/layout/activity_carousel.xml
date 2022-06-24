@@ -28,9 +28,7 @@
             app:round="5dp"
             android:src="@drawable/img_new_york"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/imageView3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toStartOf="@id/imageView3" />
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:id="@+id/imageView3"

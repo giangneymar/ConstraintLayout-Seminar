@@ -15,12 +15,6 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <Button
-                android:id="@+id/basic_motion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Basic Motion" />
-
-            <Button
                 android:id="@+id/custom_attributes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,7 +72,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:text="Carouse" />
+                android:text="Carouse"/>
+
+            <Button
+                android:id="@+id/Carouse2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Carouse"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
