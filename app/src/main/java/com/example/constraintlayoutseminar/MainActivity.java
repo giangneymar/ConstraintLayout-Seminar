@@ -55,6 +55,5 @@ public class MainActivity extends AppCompatActivity {
         binding.multiState.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MultiStateActivity.class)));
         binding.complexMotion.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ComplexMotionActivity.class)));
         binding.viewTransition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ViewTransitionActivity.class)));
-        binding.motionEffect.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionEffectActivity.class)));
     }
 }
