@@ -46,10 +46,14 @@ public class MainActivity extends AppCompatActivity {
      * code cua Giang
      */
     private void onClickG() {
-        binding.basicMotion.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionActivity.class)));
         binding.customAttributes.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, CustomAttributesActivity.class)));
         binding.keyframePosition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, KeyFramePositionActivity.class)));
         binding.keyframeInterpolation.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, KeyFrameInterpolationActivity.class)));
+        binding.keyframeCycle.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, KeyframeCycleActivity.class)));
+        binding.parallax.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ParallaxActivity.class)));
+        binding.youTubeLikeMotion.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, YouTubeLikeMotionActivity.class)));
+        binding.multiState.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MultiStateActivity.class)));
+        binding.complexMotion.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ComplexMotionActivity.class)));
         binding.viewTransition.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ViewTransitionActivity.class)));
         binding.motionEffect.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MotionEffectActivity.class)));
     }

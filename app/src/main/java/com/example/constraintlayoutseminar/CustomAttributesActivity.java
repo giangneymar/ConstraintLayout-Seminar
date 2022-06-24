@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.constraintlayoutseminar.databinding.ActivityCustomAttributesBinding;
+
 public class CustomAttributesActivity extends AppCompatActivity {
+
+    private ActivityCustomAttributesBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_attributes);
+        binding = ActivityCustomAttributesBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }

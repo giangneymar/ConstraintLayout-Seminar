@@ -33,6 +33,36 @@
                 android:text="Keyframe Interpolation" />
 
             <Button
+                android:id="@+id/keyframe_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keyframe Cycle" />
+
+            <Button
+                android:id="@+id/parallax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parallax" />
+
+            <Button
+                android:id="@+id/youTube_like_motion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube-like motion" />
+
+            <Button
+                android:id="@+id/multi_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multi-state" />
+
+            <Button
+                android:id="@+id/complex_motion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complex motion" />
+
+            <Button
                 android:id="@+id/view_transition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
