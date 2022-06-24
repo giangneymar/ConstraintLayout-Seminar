@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.helper.widget.Carousel;
 
 import com.example.constraintlayoutseminar.databinding.ActivityMainBinding;
 
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         binding.Carouse.setOnClickListener(view -> {
             startActivity(new Intent(this, CarouselActivity.class));
+        });
+
+        binding.Carouse2.setOnClickListener(view -> {
+            startActivity(new Intent(this, Carousel_demo_2.class));
         });
     }
 

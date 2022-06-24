@@ -14,6 +14,9 @@
         android:theme="@style/Theme.ConstraintLayoutSeminar"
         tools:targetApi="31">
         <activity
+            android:name=".Carousel_demo_2"
+            android:exported="false" />
+        <activity
             android:name=".MotionEffectActivity"
             android:exported="false" />
         <activity
