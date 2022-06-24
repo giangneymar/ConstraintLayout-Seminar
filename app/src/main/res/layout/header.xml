@@ -6,10 +6,9 @@
     app:layoutDescription="@xml/header"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:showPaths="true"
     android:background="#1e376b">
 
-    <com.example.constraintlayoutseminar.BoundsImageView
+    <ImageView
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

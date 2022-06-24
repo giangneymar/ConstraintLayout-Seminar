@@ -37,7 +37,6 @@
             <Layout
                 android:layout_width="0dp"
                 android:layout_height="300dp"
-                android:layout_marginTop="-16dp"
                 motion:layout_constraintEnd_toEndOf="parent"
                 motion:layout_constraintStart_toStartOf="parent"
                 motion:layout_constraintTop_toBottomOf="parent" />

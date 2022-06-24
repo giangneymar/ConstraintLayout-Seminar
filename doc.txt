@@ -5,14 +5,6 @@ app:percentY = Chỉ định vị trí mà chế độ xem sẽ tiếp cận
 app:keyPositionType = Cách giá trị percent đucợ diễn giải
 
 android:alpha = độ ẩn hiện
-app:waveOffset = độ ẩn hiện
+app:waveOffset = độ biến dạng của chuyển động
 app:waveShape = kiểu ẩn hiện
-app:wavePeriod = số lần ẩn hiện
-
-app:flow_wrapMode = Nó giúp control cách các widget được bố trí theo hướng đã cho
-app:flow_maxElementsWrap = chỉ định số lượng elements trước khi wrap, bất kể chúng có phù hợp với không gian có sẵn hay không.
-
-app:motionEffect_alpha = độ mờ của các view không di chuyển
-app:motionEffect_end = tốc độ di chuyển của các view bị ẩn
-app:motionEffect_move= hướng các view di chuyển
-app:motionEffect_start = tốc độ di chuyển của các view ko bị ẩn
+app:wavePeriod = số lần thực hiện chuyển động
